@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tejas Gupta | Software Development Student</title>
+<meta name="description" content="Portfolio of Tejas Gupta, a B.Voc Software Development student building websites and Python projects.">
+<meta name="author" content="Tejas Gupta">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<div id="glow"></div>
+<header class="nav">
+  <a class="logo" href="#home">tejas<span>.</span></a>
+  <nav id="menu">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <button id="theme" aria-label="Switch theme">&#9790;</button>
+    <button id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</header>
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hi">Hello, I'm</p>
+    <h1>Tejas Gupta</h1>
+    <p class="role"><span id="typed"></span><span class="cursor">|</span></p>
+    <p class="tag">I build clean websites and practical software that solve real problems.</p>
+    <div class="btns"><a class="btn" href="#projects">See my work</a><a class="btn ghost" href="#contact">Say hello</a></div>
+  </div>
+  <div class="photo-wrap">
+    <img src="images/tejas.jpg" alt="Photo of Tejas Gupta" class="photo" width="280" height="280">
+    <span class="chip c1">Python</span><span class="chip c2">React</span><span class="chip c3">Flask</span><span class="chip c4">JavaScript</span>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About me</h2>
+  <div class="about-grid">
+    <div>
+      <p>I am a highly motivated Computer Science student who enjoys building software and websites. I want to work on projects with well-reputed companies and keep learning along the way.</p>
+      <div class="stats">
+        <div><b data-n="4">0</b><span>Projects</span></div>
+        <div><b data-n="8">0</b><span>Skills</span></div>
+        <div><b data-n="1">0</b><span>Internship</span></div>
+      </div>
+    </div>
+    <ul class="timeline">
+      <li><strong>B.Voc. in Software Development</strong>Sunrise Institute of Engineering Technology and Management</li>
+      <li><strong>Internship</strong>Technglobal Pvt. Ltd.</li>
+      <li><strong>Based in</strong>Unnao, Uttar Pradesh</li>
+    </ul>
+  </div>
+  <h3>Skills <small>(click one to find projects that use it)</small></h3>
+  <ul class="skills" id="skills"></ul>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <p id="filterNote" class="note"></p>
+  <div class="grid" id="projectGrid"></div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <div class="contact-wrap">
+    <div class="info">
+      <p>Want to work together or just say hello? Send a message or reach me here.</p>
+      <p><strong>Email</strong><a href="mailto:tejasgupta787@gmail.com">tejasgupta787@gmail.com</a></p>
+      <p><strong>Phone</strong><a href="tel:+918400397796">8400397796</a></p>
+      <p><strong>City</strong>Unnao, UP</p>
+      <p><strong>GitHub</strong><a href="https://github.com/dev-tejas07" target="_blank" rel="noopener">github.com/dev-tejas07</a></p>
+    </div>
+    <form id="form" novalidate>
+      <label for="name">Name</label><input id="name" type="text">
+      <label for="email">Your email</label><input id="email" type="email">
+      <label for="msg">Message</label><textarea id="msg" rows="5"></textarea>
+      <button class="btn" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer>&copy; <span id="year"></span> Tejas Gupta</footer>
+<button id="top" aria-label="Back to top">&uarr;</button>
+
+<dialog id="modal">
+  <button id="close" aria-label="Close">&times;</button>
+  <h3 id="mTitle"></h3><p id="mDesc"></p><ul id="mPoints"></ul>
+  <div id="mTech" class="tags"></div>
+  <a id="mLink" class="btn" target="_blank" rel="noopener" href="#">View on GitHub</a>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
